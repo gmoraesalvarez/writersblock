@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,500,700');
+*:focus{outline:0;}
+html {height:100%}
+body {margin:0;font-family: 'Titillium Web', sans-serif;background:#f1f1f1;}
+p {margin:1px;}
+a {text-decoration:none;color:#D84315;}
+img {width:99%;}
+#txtid::placeholder { color: #707070;}
+.overdiv {overflow:auto;}
+.writer {width:100%;*height:100%;*overflow:auto;background:#f1f1f1;}
+.mask {max-width:40em;height:98%;background:#f1f1f1;padding:45px 10px 20px 10px;box-sizing:border-box;border-radius:3px;margin:auto;
+	color:rgb(70,70,70);font-weight:300;*overflow-y:auto;font-size:15px;white-space:pre-wrap;}
+.save {position:absolute;bottom:18px;left:18px;background:none no-repeat 50%;background-size:90%;border-radius:3px;
+    *box-shadow: 0 2px 2px rgba(255,255,255,0.12),0 3px 4px rgba(255,255,255,0.24);width:48px;height:48px;filter:invert(30%);
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI0IDI0Ij4KICAgIDxwYXRoIGQ9Ik0gNSAzIEMgMy45IDMgMyAzLjkgMyA1IEwgMyAxOSBDIDMgMjAuMSAzLjkgMjEgNSAyMSBMIDE5IDIxIEMgMjAuMSAyMSAyMSAyMC4xIDIxIDE5IEwgMjEgNiBMIDE4IDMgTCA1IDMgeiBNIDggNCBMIDE2IDQgTCAxNiA5IEwgOCA5IEwgOCA0IHogTSAxMyA1IEwgMTMgOCBMIDE1IDggTCAxNSA1IEwgMTMgNSB6IE0gNyAxMiBMIDE3IDEyIEMgMTcuNiAxMiAxOCAxMi40IDE4IDEzIEwgMTggMTggQyAxOCAxOC42IDE3LjYgMTkgMTcgMTkgTCA3IDE5IEMgNi40IDE5IDYgMTguNiA2IDE4IEwgNiAxMyBDIDYgMTIuNCA2LjQgMTIgNyAxMiB6Ii8+Cjwvc3ZnPgo=');}
+.fulls {position:absolute;bottom:23px;right:18px;background:none no-repeat 50%;background-size:70%;border-radius:3px;border:2px solid #414141;
+    *box-shadow: 0 2px 2px rgba(255,255,255,0.12),0 3px 4px rgba(255,255,255,0.24);width:34px;height:34px;filter:invert(30%);
+    background-image: url('https://static.thenounproject.com/png/1393172-200.png');}
+.dark {position:absolute;bottom:18px;right:82px;background:none no-repeat 50%;background-size:90%;border-radius:3px;
+    *box-shadow: 0 2px 2px rgba(255,255,255,0.12),0 3px 4px rgba(255,255,255,0.24);width:48px;height:48px;filter:invert(30%);
+    background-image: url('https://static.thenounproject.com/png/1089334-200.png');}
+
+.login {width:300px;margin:auto;margin-top:100px;padding:10px;text-align:center;}
+.login input {border:none;text-align:center;width:200px;background:#e0e0e0;font-size:16px;border-radius:3px;padding:6px;box-shadow:inset 2px 1px 4px rgba(0,0,0,0.12)}
+.mess {display:none;width:250px;border-radius:4px;background:#455A64;color:#fafafa;position:fixed;left:10px;top:40px;padding:10px;z-index:101;font-size:14px}
+.mess a{font-size:13px;color:#FFCC80}
+.but {background:#455A64;padding:3px 12px 3px 12px; border-radius:3px;box-shadow:1px 1px 1px rgba(0,0,0,0.2)}
+.fbut {background:#CFD8DC;padding:2px;border-radius:3px;width:50px;float:left;margin-right:4px}
+.ind {width:200px;height:8px;color:#fafafa;position:fixed;left:calc(50% - 100px);top:0px;z-index:102;overflow:hidden;font-size:8px;
+	text-align:center;background:#FF6F00;letter-spacing:2px;border-radius:0px 0px 2px 2px;line-height:8px;opacity:0}
+.aide {width:50%;min-width:310px;max-width:500px;height:calc(100% - 50px);position:fixed;right:-50%;top:50px;background:#e0e0e0;overflow:hidden;border-radius:3px 0px 0px 0px;
+	opacity:0;transition: opacity 0.15s;box-shadow:0px 2px 3px rgba(0,0,0,0.3)}
+.aidebut {position:fixed;top:16px;right:20px;color:#FFAA22;border:solid 2px #909090;border-radius:2px;width:30px;height:12px;overflow:hidden;z-index:100;}
+.aidebut input[type=checkbox] {opacity:0;position:absolute;top:0;left:0;width:24px}
+.frente {background-image:linear-gradient(90deg, #c0c0c0 33.33%, #606060 33.33%, #606060 66.66%, #4DB6AC 66.66%);box-shadow:inset 0px 0px 4px rgba(0,0,0,0.45);
+    width:45px;height:16px;display:block;position:absolute;top:0px;left:0px;transition: left 0.2s}/* ff6f00 */
+.aidebut input[type=checkbox]:checked + .frente {left:-15px;top:0px}
+.aidetxt {width:116%;transform: scale(0.8);transform-origin: 80px 20px}
+
+
+
+@media screen and (max-width:600px){
+    .aidetxt {width:180%;transform: scale(0.5);transform-origin: 40px 20px}
+}
