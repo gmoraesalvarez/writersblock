@@ -19,7 +19,27 @@
     '<p>&bull; Voltar para uma linha especial e criar novas linhas estende a formatação.</p>'.
     '<p>&bull; Em caso de dúvida, apagar uma linha sempre retorna pra texto simples.</p><p>&bull; Você pode copiar e colar em outro processador de texto preservando a formatação.</p>'.
     '<p>&bull; Ctrl+S salva o texto.</p>'; */
-$txt_ = '<p style="font-size: 32px; color: rgb(70, 70, 70); margin-bottom: 10px;">A primeira linha sempre é o título</p><p style="color: rgb(70, 70, 70); font-size: 32px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; font-weight: 700;">Linhas começando com " $ " viram super títulos em negrito.</p><p style="font-size: 24px; color: rgb(70, 70, 70); margin-bottom: 10px;">Linhas começando com " . " viram capítulos.</p><p style="color: rgb(70, 70, 70);">Enter inicia uma linha de texto simples.</p><p style="font-size: 15px; color: rgb(250, 250, 250); background: rgba(0, 121, 107, 1.0) none repeat scroll 0% 0%;">Linhas começando com " ! " viram anotações.</p><p style="font-size: 15px; color: rgb(70, 70, 70); background: rgba(130,130,130,0.4) none repeat scroll 0% 0%;">Linhas começando com " = " viram citações ou diálogo.</p><p style="color: rgb(70, 70, 70); font-size: 12px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; font-weight: 700;">Linhas começando com " ; " viram destaques.</p><p style="color: rgb(70, 70, 70); font-size: 12px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; font-weight: 700;"><br></p><p style="color: rgb(70, 70, 70);">• Coloque " : " no início de qualquer linha para retirar sua formatação.</p><p style="color: rgb(70, 70, 70);">• Coloque " - ", " + " ou " | " no fim de uma linha para alinhá-la à esquerda, centro ou direita. </p><p style="color: rgb(70, 70, 70);">• Você pode copiar e colar em outro processador de texto preservando a formatação.</p><p style="color: rgb(70, 70, 70);">• Ctrl+S salva o texto.</p><p style="color: rgb(70, 70, 70);">• Ctrl+B <b>negrito</b>.</p><p style="color: rgb(70, 70, 70);">• Ctrl+I <i>itálico</i>.</p><p style="color: rgb(70, 70, 70);">• Ctrl+U <u>sublinha</u>.</p><p style="color: rgb(70, 70, 70);">• Ctrl+(-) <strike>risca</strike>.</p><p style="color: rgb(70, 70, 70);">• Ctrl+L cria um link cujo endereço é a seleção.</p><p style="color: rgb(70, 70, 70);">• Ctrl+P insere uma imagem cujo endereço é a seleção.</p><p style="color: rgb(70, 70, 70);">• Para o site Letras: links dentro de @[  ]@.</p><p style="color: rgb(70, 70, 70);">• Para o site Letras: imagens dentro de {{  }}.</p>';
+$txt_ = '<p style="font-size: 32px; color: rgb(70, 70, 70); margin-bottom: 10px;">A primeira linha sempre é o título</p>
+<p style="color: rgb(70, 70, 70); font-size: 32px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; font-weight: 700;">Linhas começando com " $ " viram super títulos em negrito.</p>
+<p style="font-size: 24px; color: rgb(70, 70, 70); margin-bottom: 10px;">Linhas começando com " . " viram capítulos.</p>
+<p style="color: rgb(70, 70, 70);">Enter inicia uma linha de texto simples.</p>
+<p style="color: rgb(0, 121, 107); font-size: 15px; font-weight: 700;">Linhas começando com " ! " viram letra verde.</p>
+<p><span style="border-radius: 2px; padding: 0px 2px; color: rgb(70, 70, 70); background: rgba(130, 130, 130, 0.4)">Linhas começando com " = " viram destaques de fundo cinza.</span></p>
+<p style="color: rgb(70, 70, 70); font-size: 12px; background: rgba(90, 90, 90, 0) none repeat scroll 0% 0%; font-weight: 700;">Linhas começando com " ; " viram subtítulo.</p>
+<p><br></p>
+<p style="color: rgb(70, 70, 70);">• Coloque " : " no início de qualquer linha para retirar sua formatação.</p>
+<p style="color: rgb(70, 70, 70);">• Coloque " - ", " + " ou " = " no fim de uma linha para alinhá-la à esquerda, centro ou direita. </p>
+<p style="color: rgb(70, 70, 70);">• Você pode copiar e colar em outro processador de texto preservando a formatação.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+S salva o texto.</p><p style="color: rgb(70, 70, 70);">• Ctrl+B <b>negrito</b>.</p>
+<p><br></p>
+<p style="color: rgb(70, 70, 70);font-size: 13px; background: rgba(90, 90, 90, 0) none repeat scroll 0% 0%; font-weight: 700;">Para um texto selecionado:</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+I <i>itálico</i>.</p><p style="color: rgb(70, 70, 70);">• Ctrl+U <u>sublinha</u>.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+(-) <strike>risca</strike>.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+(1, 2, 3 ou 4) fundo <span style="background:#F57C00;color:#FAFAFA;">colorido</span>.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+0 remove o fundo colorido.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+L cria um link cujo endereço é a seleção.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+P insere uma imagem cujo endereço é a seleção.</p>';
+        
 $txt_h = $txt_;
 $txt_ = $txt_.'<p><br>Esta mensagem se apagará ao primeiro toque do teclado.<br></p>';
 if (isset($_GET['id'])){
@@ -61,9 +81,12 @@ if (isset($_GET['id'])){
 <script>
     fulls = false;
     dark = false;
-    darkTextcolor = 'rgb(150,150,150)';
-    lightTextcolor = 'rgb(70,70,70)';
+    darkTextcolor = 'rgb(150,150,150)'; //actually meant darkMODEtextcolor
+    darkTextcolorHEX = '#969696';
+    lightTextcolor = 'rgb(70,70,70)'; //actually meant lightMODEtextcolor
+    lightTextcolorHEX = '#464646';
     currentTextcolor = lightTextcolor;
+    currentTextcolorHEX = lightTextcolorHEX;
     
     function getaide(){
         if (chkbx.checked) {
@@ -104,6 +127,7 @@ if (isset($_GET['id'])){
         	writer.style.background = '#252525';
         	mask.style.background = '#252525';
             currentTextcolor = darkTextcolor;
+            currentTextcolorHEX = darkTextcolorHEX;
        		chkbx.checked = false;
         	getaide();
             setDark();
@@ -115,6 +139,7 @@ if (isset($_GET['id'])){
         	mask.style.background = '#f1f1f1';
             setLight();
             currentTextcolor = lightTextcolor;
+            currentTextcolorHEX = lightTextcolorHEX;
        		chkbx.checked = false;
         	getaide();
         	dark = false;
@@ -164,13 +189,16 @@ if (isset($_GET['id'])){
                         masknodes[l].style.fontWeight='300';
                         masknodes[l].style.color=currentTextcolor;
                     	masknodes[l].innerHTML=masknodes[l].innerHTML.substr(1);break;
-                	case '=':masknodes[l].style.color=currentTextcolor;
-                    	masknodes[l].style.background='rgba(130,130,130, 0.4)';
-                    	masknodes[l].innerHTML=masknodes[l].innerHTML.substr(1);break;
-                	case '!':masknodes[l].style.color="rgb(250,250,250)";
-	                    masknodes[l].style.background="rgb(0, 121, 107)";
+                	case '=':masknodes[l].innerHTML=
+                            '<span style="border-radius: 2px; padding: 0px 2px; color: rgb(70, 70, 70); background: rgba(130, 130, 130, 0.4)">'+
+                            masknodes[l].innerHTML.substr(1)+'</span>';break;
+                        	//masknodes[l].style.color=currentTextcolor;
+                    		//masknodes[l].style.background='rgba(130,130,130, 0.4)';
+                     case '!':masknodes[l].style.color="rgb(0, 121, 107)";
+                        masknodes[l].style.fontSize="15px";
+                        masknodes[l].style.fontWeight='700';
 	                    masknodes[l].innerHTML=masknodes[l].innerHTML.substr(1);break;
-                    case ';':masknodes[l].style.color=currentTextcolor;
+                    case ';':masknodes[l].style.color='rgb(90, 90, 90)';
 	                    masknodes[l].style.fontSize="12px";
                         masknodes[l].style.background='none';
                         masknodes[l].style.fontWeight='700';
@@ -185,26 +213,17 @@ if (isset($_GET['id'])){
                         masknodes[l].style.background='none';
                         masknodes[l].style.fontWeight='400';
                         masknodes[l].innerHTML=masknodes[l].innerHTML.substr(1);break;
-                        
-            	/*switch (mask.lastChild.previousSibling.innerHTML.substr(0,1)){
-                	//mask.lastChild.previousSibling.style.color="#313131";
-                	case '.':mask.lastChild.previousSibling.style.fontSize="24px";
-                	    mask.lastChild.previousSibling.style.marginBottom="10px";
-                    	mask.lastChild.previousSibling.innerHTML=mask.lastChild.previousSibling.innerHTML.substr(1);break;
-                	case '=':mask.lastChild.previousSibling.style.color="#757575";
-                    	mask.lastChild.previousSibling.style.background="#e0e0e0";
-                    	mask.lastChild.previousSibling.innerHTML=mask.lastChild.previousSibling.innerHTML.substr(1);break;
-                	case '!':mask.lastChild.previousSibling.style.color="#fafafa";
-	                    mask.lastChild.previousSibling.style.background="#00796b";
-	                    mask.lastChild.previousSibling.innerHTML=mask.lastChild.previousSibling.innerHTML.substr(1);break;
-            	} */  
+                    //case '!':masknodes[l].style.color="rgb(250,250,250)";
+	                //    masknodes[l].style.background="rgb(0, 121, 107)";
+	                //    masknodes[l].innerHTML=masknodes[l].innerHTML.substr(1);break;
                 }
+
                 switch (masknodes[l].innerHTML.substr(-1,1)){
-                    case '|':masknodes[l].style.textAlign="center";
+                    case '=':masknodes[l].style.textAlign="center";
                 	   	masknodes[l].innerHTML=masknodes[l].innerHTML.slice(0,-1);break;
-                    case '-':masknodes[l].style.textAlign="left";
+                    case "-":masknodes[l].style.textAlign="left";
                 	   	masknodes[l].innerHTML=masknodes[l].innerHTML.slice(0,-1);break;
-                    case '+':masknodes[l].style.textAlign="right";
+                    case "+":masknodes[l].style.textAlign="right";
                 	   	masknodes[l].innerHTML=masknodes[l].innerHTML.slice(0,-1);break;
                 }
                 
@@ -257,18 +276,33 @@ if (isset($_GET['id'])){
     function setLight(){
         //console.log('setlight');
         nodes = mask.getElementsByTagName("p");
+        nodes_span = mask.getElementsByTagName("span");
         for(i=0;i<nodes.length;i++) {
-    		if (nodes[i].style.background.indexOf('rgb(0, 121, 107)') == -1) { nodes[i].style.color = lightTextcolor; }
-            else {nodes[i].style.color = 'rgb(250, 250, 250)';}
+    		if (nodes[i].style.color.indexOf('rgb(0, 121, 107)') == -1) { nodes[i].style.color = lightTextcolor; }
+            //else {nodes[i].style.color = 'rgb(250, 250, 250)';}
+		}
+        for(i=0;i<nodes_span.length;i++) {
+    		if (nodes_span[i].style.background.indexOf('rgb(0, 121, 107)') == -1 && 
+               nodes_span[i].style.background.indexOf('rgb(245, 124, 9)') == -1 && 
+               nodes_span[i].style.background.indexOf('rgb(186, 104, 200)') == -1) { nodes_span[i].style.color = lightTextcolor; }
+            //else {nodes_span[i].style.color = 'rgb(250, 250, 250)';}
 		}
     }
     function setDark(){
         //console.log('setdark');
         nodes = mask.getElementsByTagName("p");
+        nodes_span = mask.getElementsByTagName("span");
         for(i=0;i<nodes.length;i++) {
             //console.log(nodes[i].style.background);
-            if (nodes[i].style.background.indexOf('rgb(0, 121, 107)') == -1) { nodes[i].style.color = darkTextcolor; }
-            else {nodes[i].style.color = 'rgb(200, 200, 200)';}
+            if (nodes[i].style.color.indexOf('rgb(0, 121, 107)') == -1) { nodes[i].style.color = darkTextcolor; }
+            //else {nodes[i].style.color = 'rgb(200, 200, 200)';}
+		}
+        for(i=0;i<nodes_span.length;i++) {
+            //console.log(nodes[i].style.background);
+            if (nodes_span[i].style.background.indexOf('rgb(0, 121, 107)') == -1 && 
+               nodes_span[i].style.background.indexOf('rgb(245, 124, 9)') == -1 && 
+               nodes_span[i].style.background.indexOf('rgb(186, 104, 200)') == -1) { nodes_span[i].style.color = darkTextcolor; }
+            //else {nodes_span[i].style.color = 'rgb(200, 200, 200)';}
 		}
     }
     
@@ -300,6 +334,14 @@ if (isset($_GET['id'])){
     }
     function setstrike() {
         document.execCommand('strikeThrough', false);
+    }
+    function hilite(bg,color){
+        tempstr = getSelectionText();
+        document.execCommand('insertHTML', false, "<span style='border-radius:2px;padding:0 2px 0 2px;color:"+color+";background:"+bg+";'>"+tempstr+'</span>');
+    }
+    function dehilite(){
+        tempstr = getSelectionText();
+        document.execCommand('insertHTML', false, tempstr);
     }
     function getSelectionText() {
     	text = "";
@@ -335,6 +377,21 @@ if (isset($_GET['id'])){
                 	break;
                 case 80:
                     console.log('ctrl+p'); createimg();
+                	break;
+                case 49:
+                    console.log('ctrl+1'); hilite('rgb(0, 121, 107)','rgb(250,250,250)');
+                	break;
+                case 50:
+                    console.log('ctrl+2'); hilite('rgba(130, 130, 130, 0.4)',currentTextcolor);
+                	break;
+                case 51:
+                    console.log('ctrl+3'); hilite('rgb(245, 124, 9)','rgb(250, 250, 250)');
+                	break;
+                case 52:
+                    console.log('ctrl+4'); hilite('rgb(186, 104, 200)','rgb(250, 250, 250)');
+                	break;
+                case 48:
+                    console.log('ctrl+0'); dehilite();
                 	break;
             }
         }
@@ -372,6 +429,22 @@ if (isset($_GET['id'])){
 	                e.stopPropagation();
 	            	break;
                 case 80://Block Ctrl+b
+	                e.preventDefault();     
+	                e.stopPropagation();
+	            	break;
+                case 49://Block Ctrl+b
+	                e.preventDefault();     
+	                e.stopPropagation();
+	            	break;
+                case 50://Block Ctrl+b
+	                e.preventDefault();     
+	                e.stopPropagation();
+	            	break;
+                case 51://Block Ctrl+b
+	                e.preventDefault();     
+	                e.stopPropagation();
+	            	break;
+                case 52://Block Ctrl+b
 	                e.preventDefault();     
 	                e.stopPropagation();
 	            	break;
