@@ -36,7 +36,8 @@ $txt_ = '<p style="font-size: 32px; color: rgb(70, 70, 70); margin-bottom: 10px;
 <p style="color: rgb(70, 70, 70);">• Ctrl+I <i>itálico</i>.</p><p style="color: rgb(70, 70, 70);">• Ctrl+U <u>sublinha</u>.</p>
 <p style="color: rgb(70, 70, 70);">• Ctrl+(-) <strike>risca</strike>.</p>
 <p style="color: rgb(70, 70, 70);">• Ctrl+(1, 2, 3 ou 4) fundo <span style="background:#F57C00;color:#FAFAFA;">colorido</span>.</p>
-<p style="color: rgb(70, 70, 70);">• Ctrl+0 remove o fundo colorido.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+9 remove o fundo colorido.</p>
+<p style="color: rgb(70, 70, 70);">• Ctrl+] ou [ tira e coloca citações.</p>
 <p style="color: rgb(70, 70, 70);">• Ctrl+L cria um link cujo endereço é a seleção.</p>
 <p style="color: rgb(70, 70, 70);">• Ctrl+P insere uma imagem cujo endereço é a seleção.</p>';
         
@@ -64,6 +65,8 @@ if (isset($_GET['id'])){
             	<div class="save" onclick="salvar()"></div>
     	    	<div class="fulls" id='fullsbutton' onclick="fullscreen()"></div>
                 <div class="dark" id='darkbutton' onclick="darktoggle()"></div>
+                <div class="fup" id='fontupbutton' onclick="fontsize(true)"></div>
+                <div class="fdown" id='fontdownbutton' onclick="fontsize(false)"></div>
             </div>
         	<div class='mess' id='mess'>
             	Use este código para continuar editando ou para ler este texto.<br>
@@ -98,7 +101,20 @@ if (isset($_GET['id'])){
             aide.style.opacity='0';            
         }
     }
-
+	function fontsize(inc){
+        if (inc) {
+            //document.getElementById('writer').style.zoom = '2';
+    		document.getElementById('mask').style.transform = 'scale(1.25)';
+            document.getElementById('mask').style.transformOrigin = '25% 0';
+            document.getElementById('mask').style.padding = '22px 10px 10px 10px;';
+    		//-moz-transform-origin: 0 0;
+        } else {
+            document.getElementById('mask').style.transform = 'scale(1)';
+            document.getElementById('mask').style.transformOrigin = '0 0';
+            document.getElementById('mask').style.padding = '45px 10px 20px 10px;';
+    		
+        }
+    }
     function fullscreen(){
         //writer.mozRequestFullscreen();
         if (fulls == false){
@@ -341,12 +357,21 @@ if (isset($_GET['id'])){
     }
     function dehilite(){
         tempstr = getSelectionText();
+        //document.execCommand('formatBlock', false, 'p');
+        console.log(tempstr);
         document.execCommand('insertHTML', false, tempstr);
+    }
+    function indent(inorout){
+         //tempstr = getSelectionText();
+         //document.execCommand('insertHTML', false,
+         //                     "<p style='border-radius:2px;padding:0 2px 0 2px;background:rgba(130,130,130, 0.4);text-align:justify;margin-left:40%;'>"+
+         //                     tempstr+'</p>');
+        document.execCommand(inorout, false);
     }
     function getSelectionText() {
     	text = "";
-    	if (window.getSelection) {
-	        text = window.getSelection().toString();
+    	if (document.getSelection) {
+	        text = document.getSelection().toString();
 	    } else if (document.selection && document.selection.type != "Control") {
 	        text = document.selection.createRange().text;
 	    }
@@ -390,9 +415,15 @@ if (isset($_GET['id'])){
                 case 52:
                     console.log('ctrl+4'); hilite('rgb(186, 104, 200)','rgb(250, 250, 250)');
                 	break;
-                case 48:
-                    console.log('ctrl+0'); dehilite();
+                case 57:
+                    console.log('ctrl+9'); dehilite();
                 	break;
+                case 221:
+                    console.log('ctrl+]'); indent('indent');
+                    break;
+                case 219:
+                    console.log('ctrl+['); indent('outdent');
+                    break;
             }
         }
         //if (event.ctrlKey && event.keyCode == 13){ console.log('ctrl+enter');}
@@ -448,8 +479,25 @@ if (isset($_GET['id'])){
 	                e.preventDefault();     
 	                e.stopPropagation();
 	            	break;
+                case 221://Block Ctrl+b
+                    e.preventDefault();
+                    e.stopPropagation();
+                    break;
+                case 219://Block Ctrl+b
+                    e.preventDefault();
+                    e.stopPropagation();
+                    break;
+                case 57://Block Ctrl+b
+                    e.preventDefault();
+                    e.stopPropagation();
+                    break;
     	    }
 	    }
 	};
+   /* 
+               
+     
+    }*/
+
 </script>
 </html>
